@@ -17,8 +17,8 @@ defmodule InputUtils do
       {int_input, other} = Integer.parse(trimmed_input)
       int_input
     rescue
-      e in MatchError -> IO.puts("Sorry, input wasn't numeric. Please try again\n")
-                         0
+      e in MatchError -> IO.puts("Sorry, input wasn't numeric. Interpreting it as '0'")
+      0
     end
   end
 
@@ -27,20 +27,13 @@ defmodule InputUtils do
   """
   def read_all_inputs() do
     all_inputs = get_next_input( [] )
-    IO.puts("Done with read_all_inputs")
-    IO.inspect(all_inputs)
-    IO.puts(all_inputs)
-    all_inputs
   end
 
   @doc """
     recursive helper function to get another input line from the user
   """
   defp get_next_input( working_tuple ) do
-    IO.puts("Starting get_next_input")
-    #    IO.puts(working_tuple)
     int_input = get_numeric_input()
-    IO.puts("got #{int_input}\n")
     if (int_input != 0) do
       get_next_input(working_tuple ++ [int_input])
     else
