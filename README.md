@@ -1,5 +1,5 @@
 # DivvyWarehouseChallenge
-***
+
 ## Daniel Willeitner's solution to the Divvy Mid Level Engineer assignment
 
 My solution to the problem relies an observation about the problem:
