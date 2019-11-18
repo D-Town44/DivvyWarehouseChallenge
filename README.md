@@ -33,13 +33,13 @@ Example:
     
 | 11<br>
 | 7 12<br>
-| 4 8 13<br>
+| 4 **8** 13<br>
 | 2 5 9 14<br>
 | 1 3 6 10 15<br>
     
-   1. The item at (2, 3) is in a diagonal with points: (4, 0), (3, 1), (2, 3), (1, 4). The left most of these being (1, 4).
+   1. The item at (2, 3) is in a diagonal with points: (4, 1), (3, 2), (2, 3), (1, 4). The left most of these being (1, 4).
    2. For (1, 4), we use the equation above with n = 4 to get ((4 -1)/2) * 4 + 1 + (4/2)= 7. The ID of the item at (1, 4) is 7.
-   3. Because (1, 4) has ID 7 and (2, 3) is the next item in the diagonal, the item at (2, 3) must have ID 6.
+   3. Because (1, 4) has ID 7 and (2, 3) is the next item in the diagonal, the item at (2, 3) must have ID 8.
     
 ### Code Organization
 
