@@ -1,6 +1,6 @@
 # DivvyWarehouseChallenge
 ***
-####Daniel Willeitner's solution to the Divvy Mid Level Engineer assignment
+## Daniel Willeitner's solution to the Divvy Mid Level Engineer assignment
 
 My solution to the problem relies an observation about the problem:
 
@@ -41,7 +41,7 @@ Example:
    2. For (1, 4), we use the equation above with n = 4 to get ((4 -1)/2) * 4 + 1 + (4/2)= 7. The ID of the item at (1, 4) is 7.
    3. Because (1, 4) has ID 7 and (2, 3) is the next item in the diagonal, the item at (2, 3) must have ID 6.
     
-####Code Organization
+### Code Organization
 
 There are 4 main files:
 
@@ -55,6 +55,6 @@ the item id from a coordinate pair. The main function is: `get_warehouse_id_by_c
 
 **DivvyTests.exs:** Script containing all of the unit tests for the other scripts.    
     
-####Extra Credit:
+### Extra Credit:
 In the prompt, the test case that is wrong is (100,000, 100,000)
 The answer in the prompt is 20000000001, but the actual id is 19999800001
